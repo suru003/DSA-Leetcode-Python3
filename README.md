@@ -3,3 +3,4 @@ Python 3 solutions with time and space complexity analysis of LeetCode Problems(
 
 1. Link: https://docs.google.com/spreadsheets/d/1Xu5GgQm9Zha_FJI0C3I6RsPr0PMB_2JYqr5QtKBeuVg/edit?usp=sharing
 2. Link: https://docs.google.com/spreadsheets/d/1RlqcRy3JvHmbqkLM2nJhy8jLAXZgagWcmW2zluatCG4/edit?usp=sharing
+3. Link: https://leetcode.com/discuss/interview-question/488887/amazon-final-interview-questions-sde1
