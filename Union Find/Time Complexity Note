@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/6342967/why-is-the-ackermann-function-related-to-the-amortized-complexity-of-union-find
+
+(about find and union) These two techniques complement each other; applied together, the amortized time per operation is only O(α(n)),
+ where α(n) is the inverse of the function f(n) = A(n,n), and A is the extremely quickly-growing Ackermann function.
+
+ Since α(n) is the inverse of this function, α(n) is less than 5 for all remotely practical values of n.
+ Thus, the amortized running time per operation is effectively a small constant.
+

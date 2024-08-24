@@ -1,10 +1,11 @@
-'''
+"""
 Link: https://leetcode.com/problems/longest-consecutive-sequence/
 Time Complexity: O(n)
 Space Complexity: O(n)
-'''
+"""
 from collections import defaultdict
 from typing import List
+
 
 class UnionFind:
     def __init__(self):
