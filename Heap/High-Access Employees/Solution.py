@@ -1,8 +1,8 @@
-'''
+"""
 Link: https://leetcode.com/contest/weekly-contest-371/problems/high-access-employees/
 Time Complexity: O(nlogn)
 Space Complexity: O(n)
-'''
+"""
 from collections import defaultdict
 from typing import List
 import heapq as hq

@@ -1,9 +1,9 @@
-'''
+"""
 Link: https://leetcode.com/problems/meeting-rooms-ii/
 Link: https://www.lintcode.com/problem/919/
 Time Complexity: O(nlogn)
 Space Complexity: O(n)
-'''
+"""
 from typing import List
 from lintcode import (
     Interval,

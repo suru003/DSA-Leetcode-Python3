@@ -1,8 +1,8 @@
-'''
+"""
 Link: https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/
 Time Complexity: O(nlogn)
 Space Complexity: O(n)
-'''
+"""
 from typing import List
 import heapq as hq
 
