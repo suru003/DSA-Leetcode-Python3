@@ -7,7 +7,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Sample data creation for illustration
-data = [(1, None, 25000), (2, 1, 28000), (3, 1, 32000), (4, None, 29000), (5, 3, 27000)]
+data = [(1, None, 25000), (2, 1, 28000), (3, 1, 32000), (4, None, 29000), (5, 6, 27000)]
 columns = ['employee_id', 'manager_id', 'salary']
 df_employees = spark.createDataFrame(data, columns)
 
@@ -25,7 +25,7 @@ def find_employees(spark_df):
     # Step 3: Exclude employees who are managers from the filtered results
     final_result = filtered_employees.join(
         unique_ids,
-        filtered_employees['employee_id'] == unique_ids['employee_id'],
+        filtered_employees['manager_id'] == unique_ids['employee_id'],
         'left_anti'
     )
 

@@ -14,11 +14,14 @@ df_employee = spark.createDataFrame(data_employee, ['empId', 'name'])
 df_bonus = spark.createDataFrame(data_bonus, ['empId', 'bonus'])
 
 # Performing the LEFT JOIN
-result = df_employee.join(df_bonus, on='empId', how='left')
+result = df_employee.alias('df1').join(df_bonus.alias('df2'), on='empId', how='left')\
+        .select(col('df1.empId').alias('empId')
+            , col('df2.bonus').alias('bonus')
+            , col('df2.empId').alias('bonusId'))
 
 # Filtering the result
-filtered_result = result.filter(col('empId').isNull() | (col('bonus') < 1000))
+filtered_result = result.filter(col('bonusId').isNull() | (col('bonus') < 1000))
 
 # Selecting the desired columns
-final_result = filtered_result.select('name', 'bonus')
+final_result = filtered_result.select(col('empId').alias('name'), 'bonus')
 final_result.show()

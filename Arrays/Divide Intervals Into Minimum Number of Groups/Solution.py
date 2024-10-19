@@ -1,4 +1,8 @@
-# https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/
+"""
+Link: https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/
+Time Complexity: O(nlogn)
+Space Complexity: O(n)
+"""
 from typing import List
 from collections import defaultdict
 
