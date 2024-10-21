@@ -1,8 +1,8 @@
-'''
+"""
 Link: https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
 Time Complexity: O(n)
 Space Complexity: O(n)
-'''
+"""
 from typing import List
 
 class Solution:
