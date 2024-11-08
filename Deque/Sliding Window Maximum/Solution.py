@@ -1,8 +1,8 @@
-'''
+"""
 Link: https://leetcode.com/problems/sliding-window-maximum/description/
 Time Complexity: O(n)
 Space Complexity: O(n)
-'''
+"""
 from typing import List
 from collections import deque
 
