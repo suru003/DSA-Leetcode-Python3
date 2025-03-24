@@ -1,8 +1,8 @@
-'''
+"""
 Link: https://leetcode.com/problems/palindromic-substrings/
 Time Complexity: O(n^2)
 Space Complexity: O(1)
-'''
+"""
 
 class Solution:
     def countSubstrings(self, s: str) -> int:

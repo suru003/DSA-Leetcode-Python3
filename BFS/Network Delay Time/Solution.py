@@ -1,8 +1,8 @@
-'''
+"""
 Link: https://leetcode.com/problems/network-delay-time/
 Time Complexity: O(n)
 Space Complexity: O(n)
-'''
+"""
 from typing import List
 from collections import defaultdict, deque
 

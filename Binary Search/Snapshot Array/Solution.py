@@ -1,8 +1,8 @@
-'''
+"""
 Link: https://leetcode.com/problems/snapshot-array/
 Time Complexity: Different for each function
 Space Complexity: O(n) whole
-'''
+"""
 
 from bisect import bisect_right
 
