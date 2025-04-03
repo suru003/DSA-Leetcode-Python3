@@ -13,17 +13,17 @@ class Solution:
         visited = set()
 
         for val in range(1, int(sqrt(n)) + 1):
-            to_add = - (val * val)
+            to_add = (val * val)
             dq.append([1, to_add])
             visited.add(to_add)
 
         while dq:
             steps, val = dq.popleft()
-            if val == -n:
+            if val == n:
                 return steps
 
-            for nex in range(1, int(sqrt(n + val)) + 1):
-                to_add = val - (nex * nex)
+            for nex in range(1, int(sqrt(n - val)) + 1):
+                to_add = val + (nex * nex)
                 if to_add not in visited:
                     dq.append([steps + 1, to_add])
                     visited.add(to_add)
